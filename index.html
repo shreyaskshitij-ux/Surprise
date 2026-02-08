@@ -20,6 +20,7 @@
         border: none;
         border-radius: 8px;
         cursor: pointer;
+        transition: all 0.3s ease;
     }
     #yes {
         background-color: #ff4d6d;
@@ -35,6 +36,7 @@
         font-size: 22px;
         color: #d6336c;
         display: none;
+        line-height: 1.6;
     }
 </style>
 </head>
@@ -46,12 +48,14 @@
 <button id="yes" onclick="yesClicked()">YES 💖</button>
 <button id="no" onmouseover="moveNo()">NO 😅</button>
 
-<div id="msg">🥰 Yay! You made my heart compile 💖<br>
-Let’s debug life together 💻✨</div>
+<div id="msg"></div>
 
 <script>
 function yesClicked() {
-    document.getElementById("msg").style.display = "block";
+    const msgDiv = document.getElementById("msg");
+    // Your personal love message
+    msgDiv.innerHTML = "Shreyas says: Samu, You are my lover, my partner, my inspiration, my best friend, my one and only, my life. You are my everything. I love you. 💖";
+    msgDiv.style.display = "block";
 }
 
 function moveNo() {
@@ -64,5 +68,4 @@ function moveNo() {
 </script>
 
 </body>
-</html>
 </html>
