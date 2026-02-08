@@ -1,2 +1,2 @@
-# Update valentine.html with colored personalized message
+# Update Valentine message with colors.
 My Coding Valentine Page
